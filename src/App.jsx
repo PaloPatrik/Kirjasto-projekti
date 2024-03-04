@@ -14,7 +14,7 @@ function App() {
         <TextField variant="outlined" helperText = "gr tunnus" />
         <TextField variant="outlined" helperText = "salasana" />
       </Stack>
-  <Stack spacing={5} direction="row">
+  <Stack spacing={5}>
     <Button variant="contained">Kirjaudu</Button>
   </Stack>
     </div>
