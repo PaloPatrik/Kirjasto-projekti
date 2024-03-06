@@ -8,20 +8,20 @@ function App() {
   const [value, setValue] = React.useState(0)
   if (value === 1) {
     return (
-      <div>
-        
-        <Stack spacing={5} direction = "row">
-        <Button variant="contained" onClick={() => setValue(0)}>Kirjaudu</Button>
-        <Button variant="outlined" onClick={() => setValue(1)}>Rekisteröidy</Button>
+      <div className='App'>
+        <Stack spacing={5} direction = "row" className='logregbuttons'>
+        <Button variant="outlined" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
+        <Button variant="outlined" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
         </Stack>
         
         <Stack spacing={3} direction="column" id="rekisteroidy-kentta">
-          <TextField variant='outlined' helperText='nimi'/>
-          <TextField variant='outlined' helperText='gr tunnus'/>
-          <TextField variant='outlined' helperText='salasana'/>
-          <TextField variant='outlined' helperText='salasana uudelleen'/>
+          <TextField variant='outlined' className='rekisteroidykentat' label='Nimi' />
+          <TextField variant='outlined' className='rekisteroidykentat' label='Gr tunnus' />
+          <TextField variant='outlined' className='rekisteroidykentat' label='Salasana' />
+          <TextField variant='outlined' className='rekisteroidykentat' label='Salasana uudelleen' />
         </Stack>
-        <Stack>
+
+        <Stack className='vati'>
           <Button variant='contained'>Rekisteröidy</Button>
         </Stack>
       </div>
@@ -30,17 +30,17 @@ function App() {
   else
   return (
     <div className="App">
-      
-      <Stack spacing={5} direction = "row">
-        <Button variant="contained" onClick={() => setValue(0)}>Kirjaudu</Button>
-        <Button variant="outlined" onClick={() => setValue(1)}>Rekisteröidy</Button>
+      <Stack spacing={5} direction = "row" className='logregbuttons'>
+        <Button variant="outlined" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
+        <Button variant="outlined" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
       </Stack>
       
       <Stack spacing={3} direction = "column" id="kirjaudu-kentta">
-        <TextField variant="outlined" helperText = "gr tunnus" />
-        <TextField variant="outlined" helperText = "salasana" />
+        <TextField variant="outlined" className='kirjaudukentat' label='Gr tunnus' />
+        <TextField variant="outlined" className='kirjaudukentat' label='Salasana' />
       </Stack>
-  <Stack spacing={5}>
+
+  <Stack spacing={5} className='vati'>
     <Button variant="contained">Kirjaudu</Button>
   </Stack>
     </div>
