@@ -4,24 +4,28 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Tabs from '@mui/material/Tabs';
+import FormControl from '@mui/material/FormControl';
+import { TextareaAutosize } from '@mui/base/TextareaAutosize';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormLabel from '@mui/material/FormLabel';
 
 function App() {
-  const [value, setValue] = React.useState(0)
+ 
   return (
     <div className="App">
-      <Tabs value={value}>
-      <Stack spacing={5} direction = "row">
-        <Button variant="contained" onClick={() => setValue(0)}>Kirjaudu</Button>
-        <Button variant="outlined" onClick={() => setValue(1)}>Rekisteröidy</Button>
-      </Stack>
-      </Tabs>
-      <Stack spacing={3} direction = "column" id="kirjaudu-kentta">
-        <TextField variant="outlined" helperText = "gr tunnus" />
-        <TextField variant="outlined" helperText = "salasana" />
-      </Stack>
-  <Stack spacing={5}>
-    <Button variant="contained">Kirjaudu</Button>
-  </Stack>
+      <div class= "apua">
+      <TextareaAutosize minRows={4} variant="outlined" helperText = "kerro ongelmasta" />
+</div>
+
+<RadioGroup
+        row 
+      >
+        <FormControlLabel value="kirjasto1" control={<Radio />} label="kirjasto1" />
+        <FormControlLabel value="kirjasto2" control={<Radio />} label="kirjasto2" />
+        <FormControlLabel value="kirjasto3" control={<Radio />} label="kirjasto3" />
+      </RadioGroup>
     </div>
   );
 }
