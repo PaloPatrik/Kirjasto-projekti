@@ -11,14 +11,14 @@ function App() {
       <div className='App'>
         <Stack spacing={5} direction = "row" className='logregbuttons'>
         <Button variant="outlined" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
-        <Button variant="outlined" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
+        <Button variant="contained" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
         </Stack>
         
         <Stack spacing={3} direction="column" id="rekisteroidy-kentta">
           <TextField variant='outlined' className='rekisteroidykentat' label='Nimi' />
           <TextField variant='outlined' className='rekisteroidykentat' label='Gr tunnus' />
-          <TextField variant='outlined' className='rekisteroidykentat' label='Salasana' />
-          <TextField variant='outlined' className='rekisteroidykentat' label='Salasana uudelleen' />
+          <TextField variant='outlined' type='password' className='rekisteroidykentat' label='Salasana' />
+          <TextField variant='outlined' type='password' className='rekisteroidykentat' label='Salasana uudelleen' />
         </Stack>
 
         <Stack className='vati'>
@@ -31,13 +31,13 @@ function App() {
   return (
     <div className="App">
       <Stack spacing={5} direction = "row" className='logregbuttons'>
-        <Button variant="outlined" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
+        <Button variant="contained" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
         <Button variant="outlined" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
       </Stack>
       
       <Stack spacing={3} direction = "column" id="kirjaudu-kentta">
         <TextField variant="outlined" className='kirjaudukentat' label='Gr tunnus' />
-        <TextField variant="outlined" className='kirjaudukentat' label='Salasana' />
+        <TextField variant="outlined" type='password' className='kirjaudukentat' label='Salasana' />
       </Stack>
 
   <Stack spacing={5} className='vati'>
