@@ -4,8 +4,9 @@ import header from './kirjastocut.png';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+
 
 
 
@@ -28,18 +29,21 @@ function App() {
         }}
       >
         
-
         <RadioGroup row name="kirjasto" style={{ marginBottom: '20px' }}>
           <FormControlLabel value="kirjasto1" control={<Radio />} label="kirjasto1" />
           <FormControlLabel value="kirjasto2" control={<Radio />} label="kirjasto2" />
           <FormControlLabel value="kirjasto3" control={<Radio />} label="kirjasto3" />
         </RadioGroup>
 
-        <TextareaAutosize
-          minRows={4}
-          placeholder="Kerro ongelmasta"
-          style={{ width: '300px', maxWidth: '100%', marginTop: '10px', marginBottom: '20px'}}
-        />
+    <TextField
+      multiline
+      rows={4}
+      placeholder="Enter text here"
+      variant="outlined"
+      fullWidth
+      
+    />
+        
         <Button variant="contained"
         style={{marginTop: '20px'}}
         >Lähetä</Button>
