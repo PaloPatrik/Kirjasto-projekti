@@ -6,6 +6,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 
 
@@ -21,17 +22,20 @@ function App() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          height: '50vh', 
           overflow: 'hidden',
         }}
       >
-        
+        <Typography variant="h4" gutterBottom>
+        missä kirjastolla olit töissä
+      </Typography>
         <RadioGroup row name="kirjasto" style={{ marginBottom: '20px' }}>
           <FormControlLabel value="kirjasto1" control={<Radio />} label="kirjasto1" />
           <FormControlLabel value="kirjasto2" control={<Radio />} label="kirjasto2" />
           <FormControlLabel value="kirjasto3" control={<Radio />} label="kirjasto3" />
         </RadioGroup>
-
+        <Typography variant="h4" gutterBottom>
+        missä oli vika
+      </Typography>
         <RadioGroup row name="laite" style={{ marginBottom: '20px' }}>
           <FormControlLabel value="Tietokone" control={<Radio />} label="Tietokone" />
           <FormControlLabel value="Puhelin" control={<Radio />} label="Puhelin" />
@@ -43,7 +47,7 @@ function App() {
     <TextField
       multiline
       rows={4}
-      placeholder="Kerro paikastasi"
+      placeholder="Kerro vian tietoja"
       variant="outlined"
       fullWidth
       />
