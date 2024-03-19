@@ -47,7 +47,7 @@ function App() {
     <TextField
       multiline
       rows={4}
-      placeholder="Kerro vian tietoja"
+      placeholder="lisä tietoa"
       variant="outlined"
       fullWidth
       />
