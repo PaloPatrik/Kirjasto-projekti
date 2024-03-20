@@ -9,6 +9,7 @@
     background-image: url('sigma.jpg');
     background-size: 55% 100vh;
     background-repeat: no-repeat;
+    padding-left: 55%;
 }
 }
 
@@ -19,8 +20,8 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  position: relative;
-  left: 125%;
+  /*position: relative;*/
+  /*left: 125%;*/
 }
 
 .vati{
@@ -31,8 +32,8 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  position: relative;
-  left: 125%;
+  /*position: relative;*/
+  /*left: 125%;*/
 }
 
 .rekisteroidykentat {
@@ -42,8 +43,8 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  position: relative;
-  left: 124%;
+  /*position: relative;*/
+  /*left: 124%;*/
 }
 
 .logreg {
@@ -53,8 +54,8 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  position: relative;
-  left: 125%;
+  /*position: relative;*/
+  /*left: 125%;*/
 }
 
 .logregbuttons {
@@ -74,4 +75,13 @@
     position: relative;
     left: auto;
   }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: right;
+  align-items: stretch;
+  justify-content: right;
 };
