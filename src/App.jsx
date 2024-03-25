@@ -1,17 +1,18 @@
 import './App.css';
 import * as React from 'react';
+import Content from './Content';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
+import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
 function App() {
   const [value, setValue] = React.useState(0)
   if (value === 1) {
-    return (
+    return ( // Ohjelma piirtää rekisteröitymisnäkymän
       <div className='App'>
-        <Stack spacing={5} direction = "row" className='logregbuttons'>
+        <Stack spacing={5} direction = "row" className='logregbuttons'> 
         <Button variant="outlined" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
         <Button variant="contained" onClick={() => setValue(1)} className='logreg'>Rekisteröidy</Button>
         </Stack>
@@ -30,7 +31,7 @@ function App() {
     )
   }
   else
-  return (
+  return ( // Ohjelma piirtää kirjautumisnäkymän (aina oletuksena)
     <div className="App">
       <Stack spacing={5} direction = "row" className='logregbuttons'>
         <Button variant="contained" onClick={() => setValue(0)} className='logreg'>Kirjaudu</Button>
@@ -42,9 +43,9 @@ function App() {
         <TextField variant="outlined" type='password' className='kirjaudukentat' label='Salasana' />
       </Stack>
 
-  <Stack spacing={5} className='vati'>
-    <Button variant="contained">Kirjaudu</Button>
-  </Stack>
+      <Stack spacing={5} className='vati'>
+        <Button variant="contained" onClick={Content}>Kirjaudu</Button>
+      </Stack>
     </div>
   );
 }
