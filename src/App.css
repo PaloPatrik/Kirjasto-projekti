@@ -20,8 +20,6 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  /*position: relative;*/
-  /*left: 125%;*/
 }
 
 .vati{
@@ -32,8 +30,6 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  /*position: relative;*/
-  /*left: 125%;*/
 }
 
 .rekisteroidykentat {
@@ -43,8 +39,6 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  /*position: relative;*/
-  /*left: 124%;*/
 }
 
 .logreg {
@@ -54,8 +48,6 @@
   align-content: center;
   align-items: stretch;
   justify-content: center;
-  /*position: relative;*/
-  /*left: 125%;*/
 }
 
 .logregbuttons {
