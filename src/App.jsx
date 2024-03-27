@@ -4,6 +4,7 @@ import Content from './Content';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
+import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -25,7 +26,7 @@ function App() {
         </Stack>
 
         <Stack className='vati'>
-          <Button variant='contained'>Rekisteröidy</Button>
+          <Button variant='contained' type='submit'>Rekisteröidy</Button>
         </Stack>
       </div>
     )
@@ -44,7 +45,15 @@ function App() {
       </Stack>
 
       <Stack spacing={5} className='vati'>
-        <Button variant="contained" onClick={Content}>Kirjaudu</Button>
+        <BrowserRouter>
+          <NavLink to='/Content'>
+            <Button variant="contained">Kirjaudu</Button>
+          </NavLink>
+          
+          <Routes>
+            <Route path='Content/*' element={<Content />}></Route>
+          </Routes>
+        </BrowserRouter>
       </Stack>
     </div>
   );

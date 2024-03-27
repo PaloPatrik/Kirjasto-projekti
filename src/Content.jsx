@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-function Content () {
+const Content = () => {
     return (
-        <div className='Content'>
+        <div className='Contents'>
             <p>lol</p>
         </div>
     )
