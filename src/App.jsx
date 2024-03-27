@@ -8,10 +8,10 @@ import TextField from '@mui/material/TextField';
 import header from './kirjastocut.png';
 import './App.css';
 
-function App() {
+function App() { 
   return (
     <div>
-      <header>
+      <header> 
         <img src={header} alt="header" />
       </header>
       <div className="form-container">
