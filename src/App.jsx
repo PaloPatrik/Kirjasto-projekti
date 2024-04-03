@@ -4,7 +4,6 @@ import Content from './Content';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
-import { BrowserRouter, Route, NavLink, Routes } from 'react-router-dom';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -31,7 +30,7 @@ function App() {
       </div>
     )
   }
-  else
+  else if (value === 0)
   return ( // Ohjelma piirtää kirjautumisnäkymän (aina oletuksena)
     <div className="App">
       <Stack spacing={5} direction = "row" className='logregbuttons'>
@@ -45,18 +44,17 @@ function App() {
       </Stack>
 
       <Stack spacing={5} className='vati'>
-        <BrowserRouter>
-          <NavLink to='/Content'>
-            <Button variant="contained">Kirjaudu</Button>
-          </NavLink>
-          
-          <Routes>
-            <Route path='Content/*' element={<Content />}></Route>
-          </Routes>
-        </BrowserRouter>
+        <Button variant="contained" onClick={() => setValue(2)}>Kirjaudu</Button>
       </Stack>
     </div>
   );
+  else if (value === 2)
+  document.body.style.backgroundSize = "100% 15vh"
+  return (
+    <div>
+      <Content />
+    </div>
+    )
 }
 
 export default App;
