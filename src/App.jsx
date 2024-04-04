@@ -19,7 +19,7 @@ function App() {
         </Stack>
         
         <Stack spacing={3} direction="column" id="rekisteroidy-kentta">
-          <TextField variant='outlined' className='rekisteroidykentat' label='Nimi' />
+          <TextField variant='outlined' className='rekisteroidykentat' label='Nimi'/>
           <TextField variant='outlined' className='rekisteroidykentat' label='Gr tunnus' />
           <TextField variant='outlined' type='password' className='rekisteroidykentat' label='Salasana' />
           <TextField variant='outlined' type='password' className='rekisteroidykentat' label='Salasana uudelleen' />
@@ -40,8 +40,8 @@ function App() {
       </Stack>
       
       <Stack spacing={3} direction = "column" id="kirjaudu-kentta">
-        <TextField variant="outlined" className='kirjaudukentat' label='Gr tunnus' />
-        <TextField variant="outlined" type='password' className='kirjaudukentat' label='Salasana' />
+        <TextField variant="outlined" className='kirjaudukentat' label='Gr tunnus' required/>
+        <TextField variant="outlined" type='password' className='kirjaudukentat' label='Salasana' required/>
       </Stack>
 
       <Stack spacing={5} className='vati'>
