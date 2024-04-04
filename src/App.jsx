@@ -4,6 +4,7 @@ import Content from './Content';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
+import background from './sigma2.png';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -49,7 +50,9 @@ function App() {
     </div>
   );
   else if (value === 2)
+  document.body.style.backgroundImage = `url(${background})`
   document.body.style.backgroundSize = "100% 15vh"
+  document.body.style.backgroundRepeat = "no-repeat"
   return (
     <div>
       <Content />

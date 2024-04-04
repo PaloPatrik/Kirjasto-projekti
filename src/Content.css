@@ -1,0 +1,12 @@
+.addSearch {
+margin-top: 17dvh;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+align-content: center;
+align-items: center;
+justify-content: center;
+position: absolute;
+left: 50dvw;
+right: 50dvw;
+};
