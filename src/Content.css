@@ -15,7 +15,16 @@ height: 100px;
 }
 
 .personProb {
-padding-top: 35dvh;
+    position: absolute;
+    top: 1dvh;
+}
+
+.Lisatiedot {
+    width: 40dvw;
+    background-color: white;
+}
+
+.pidor {
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
@@ -23,19 +32,10 @@ align-content: center;
 align-items: center;
 justify-content: center;
 position: absolute;
-left: 0dvw;
-right: 0dvw;
-}
-
-.personProb2 {
-    padding-top: 40dvh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0dvw;
-    right: 0dvw;
-    };
+background-color: rgb(218, 217, 217);
+width: 70dvw;
+height: 60dvh;
+position: absolute;
+left: 15dvw;
+top: 35dvh;
+};
