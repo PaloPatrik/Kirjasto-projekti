@@ -5,14 +5,14 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 
-const Content = () => {
+const Content = (props) => {
     return (
         <>
         <div className='Contents'>
             <Stack className='addSearch' spacing={1} direction='row'>
                 <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}}>Hae</Button>
                 <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}}>Lisää</Button>
-                <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}}>Ulos</Button>
+                <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}} onClick={() => props.setValue(0)}>Ulos</Button>
             </Stack>
         </div>
 

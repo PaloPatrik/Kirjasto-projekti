@@ -4,12 +4,14 @@ import Content from './Content';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
-import background from './sigma2.png';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from "@mui/material/CssBaseline";
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
 function App() {
   const [value, setValue] = React.useState(0)
+
   if (value === 1) {
     return ( // Ohjelma piirtää rekisteröitymisnäkymän
       <div className='App'>
@@ -48,14 +50,27 @@ function App() {
         <Button variant="contained" onClick={() => setValue(2)}>Kirjaudu</Button>
       </Stack>
     </div>
-  );
+  )
   else if (value === 2)
-  document.body.style.backgroundImage = `url(${background})`
-  document.body.style.backgroundSize = "100% 15vh"
-  document.body.style.backgroundRepeat = "no-repeat"
+  //document.body.style.backgroundImage = "none"
+  var theme = createTheme({
+    components : {
+      MuiCssBaseline: {
+        styleOverrides : {
+          body: {
+            backgroundImage: "none"
+          }
+        }
+      }
+    }
+  })
+  
   return (
     <div>
-      <Content />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Content value={value} setValue={setValue} />
+      </ThemeProvider>
     </div>
     )
 }
