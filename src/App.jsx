@@ -53,12 +53,28 @@ function App() {
     </div>
   )
 
-  else if (value === 3)
-  return(
-    <div>
-      <Add />
-    </div>
-  )
+  else if (value === 3) {
+    var theme2 = createTheme({
+      components: {
+        MuiCssBaseline: {
+          styleOverrides: {
+            body: {
+              backgroundImage: "none"
+            }
+          }
+        }
+      }
+    });
+
+    return (
+      <div>
+        <ThemeProvider theme={theme2}>
+          <CssBaseline />
+          <Add />
+        </ThemeProvider>
+      </div>
+    );
+  } 
 
   else if (value === 2)
   //document.body.style.backgroundImage = "none"
