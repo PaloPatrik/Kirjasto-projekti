@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin lisäksi Material UI-kirjastoa
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
+import Add from './Add';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -51,6 +52,14 @@ function App() {
       </Stack>
     </div>
   )
+
+  else if (value === 3)
+  return(
+    <div>
+      <Add />
+    </div>
+  )
+
   else if (value === 2)
   //document.body.style.backgroundImage = "none"
   var theme = createTheme({
@@ -72,7 +81,7 @@ function App() {
         <Content value={value} setValue={setValue} />
       </ThemeProvider>
     </div>
-    )
+  )
 }
 
 export default App;

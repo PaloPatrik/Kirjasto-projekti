@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+  }
+  
+  header img {
+    width: 100%;
+  }
+  
+  .FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .RadioGroup {
+    margin-bottom: 10%;
+    margin-top: 50px;
+  }
+  
+  .buttoni {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  
+  .teksti{
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
