@@ -6,24 +6,30 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 //import header from './kirjastocut.png';
-import './App.css';
+import './Add.css';
 
 function Add() {
   return (
+    
     <form>
-
-      <div className="FormContainer">
-        <Typography variant="h4" gutterBottom>
+        <div class= "centeri">
+        <Button variant="contained" className="Pois">
+          Etusivulle
+        </Button>
+        <Typography variant="h4" gutterBottom classname = "tekstit">
           Missä kirjastolla olit töissä
         </Typography>
+       
         <RadioGroup row name="kirjasto" className="RadioGroup">
           <FormControlLabel value="kirjasto1" control={<Radio />} label="Kirjasto1"/> 
           <FormControlLabel value="kirjasto2" control={<Radio />} label="Kirjasto2"/>
           <FormControlLabel value="kirjasto3" control={<Radio />} label="Kirjasto3"/>
         </RadioGroup>
-        <Typography variant="h4" gutterBottom>
+        <div class = "tekstit">
+        <Typography variant="h4" gutterBottomd >
           Missä oli vika
         </Typography>
+        </div>
         <RadioGroup row name="laite" className="RadioGroup"
         //radiogroup missä oli vika
         >
@@ -46,8 +52,9 @@ function Add() {
         <Button variant="contained" className="Buttoni">
           Lähetä
         </Button>
-      </div>
-    </form>
+        </div>
+   </form>
+    
   ); 
 }
 

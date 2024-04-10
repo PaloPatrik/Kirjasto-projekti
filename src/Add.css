@@ -1,30 +1,33 @@
-header {
-    text-align: center;
+
+
+  .centeri {
+    position: absolute;
+    top: 90dvh;
+    left: 50dvw;
+    transform: translate(-50%, -50%);
   }
   
-  header img {
-    width: 100%;
-  }
-  
-  .FormContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
+ 
   
   .RadioGroup {
-    margin-bottom: 10%;
-    margin-top: 50px;
+    margin-bottom: 10dvh;
+    margin-top: 5dvh;
+    align-items: center;
   }
   
-  .buttoni {
-    margin-bottom: 50px;
-    margin-top: 20px;
+  .Buttoni {
+    left: 20dvw;
   }
   
   .teksti{
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 50dvh;
+    margin-top: 5dvh;
+    
+  }
+  .tekstit{
+    left: 50dvw;
+  }
+    
+.Pois{
+margin-bottom: 5dvh;
   }
