@@ -1,43 +1,50 @@
-
-
-  .centeri {
+.centeri {
+    /*margin-top: 60dvh;*/
     position: absolute;
-    top: 90dvh;
+    top: 57dvh;
     left: 50dvw;
     transform: translate(-50%, -50%);
   }
   
- 
-  
-  .RadioGroup {
+.RadioGroup {
     margin-bottom: 10dvh;
-    margin-top: 5dvh;
+    max-height: 60dvh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
     align-items: center;
+    justify-content: center;
   }
   
-  .Buttoni {
+.Buttoni {
     left: 20dvw;
   }
   
-  .teksti{
+.teksti{
     margin-bottom: 50dvh;
     margin-top: 5dvh;
-    
   }
-  .tekstit{
-    left: 50dvw;
+
+.tekstit{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
     
 .Pois{
   position: absolute;
   left: -25dvw;
- top: 5dvh;
+  top: 5dvh;
   transform: translate(-50%, -50%);
   background-color: black;
-
   }
 
-  .rivi {
+.rivi {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -50,4 +57,4 @@
     background-color: rgba(0, 118, 151, 0.589);
     width:100%;
     height: 100px;
-    }
+  };

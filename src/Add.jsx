@@ -6,17 +6,16 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
-//import header from './kirjastocut.png';
 import './Add.css';
 
-function Add() {
+function Add(props) {
   return (
     
     <form>
       
         <div class= "centeri">
         
-        <Typography variant="h4" gutterBottom classname = "tekstit">
+        <Typography variant="h6" gutterbottom className = "tekstit">
           Missä kirjastolla olit töissä
         </Typography>
        
@@ -25,17 +24,16 @@ function Add() {
           <FormControlLabel value="kirjasto2" control={<Radio />} label="Kirjasto2"/>
           <FormControlLabel value="kirjasto3" control={<Radio />} label="Kirjasto3"/>
         </RadioGroup>
-        <div class = "tekstit">
-        <Typography variant="h4" gutterBottomd >
-          Missä oli vika
-        </Typography>
+        <div className= "tekstit">
+          <Typography variant="h6" gutterBottom>
+            Missä oli vika
+          </Typography>
         </div>
         <RadioGroup row name="laite" className="RadioGroup"
         //radiogroup missä oli vika
         >
           <FormControlLabel value="Tietokone" control={<Radio />} label="Tietokone"/>
           <FormControlLabel value="Puhelin" control={<Radio />} label="Puhelin"/>
-          <FormControlLabel value="Mikroaaltouuni" control={<Radio />} label="Mikroaaltouuni" /> 
           <FormControlLabel value="Pankkitili" control={<Radio />} label="Pankkitili"/>
           <FormControlLabel value="Tabletti" control={<Radio />} label="Tabletti"/>
           <FormControlLabel value="Muu" control={<Radio />} label="Muu"/>
@@ -50,8 +48,8 @@ function Add() {
           fullWidth //koko alueen vie 
         />
         <Stack className='rivi' spacing={1} direction='row'>
-        <Button variant="contained" > Lähetä</Button>
-        <Button variant="contained" >Etusivulle</Button>
+        <Button variant="contained">Lähetä</Button>
+        <Button variant="contained" onClick={() => props.setValue(2)}>Takaisin</Button>
         </Stack>
         </div>
    </form>

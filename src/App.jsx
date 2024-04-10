@@ -7,6 +7,7 @@ import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin l
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import Add from './Add';
+import background from './sigma2.png';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -59,7 +60,9 @@ function App() {
         MuiCssBaseline: {
           styleOverrides: {
             body: {
-              backgroundImage: "none"
+              backgroundImage: `url(${background})`,
+              backgroundSize: "100% 15vh",
+              backgroundRepeat: "no-repeat",
             }
           }
         }
@@ -70,20 +73,22 @@ function App() {
       <div>
         <ThemeProvider theme={theme2}>
           <CssBaseline />
-          <Add />
+          <Add value={value} setValue={setValue}/>
         </ThemeProvider>
       </div>
     );
   } 
 
   else if (value === 2)
-  //document.body.style.backgroundImage = "none"
+
   var theme = createTheme({
     components : {
       MuiCssBaseline: {
         styleOverrides : {
           body: {
-            backgroundImage: "none"
+            backgroundImage: `url(${background})`,
+            backgroundSize: "100% 15vh",
+            backgroundRepeat: "no-repeat"
           }
         }
       }
