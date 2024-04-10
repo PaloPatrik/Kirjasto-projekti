@@ -5,6 +5,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
 //import header from './kirjastocut.png';
 import './Add.css';
 
@@ -12,10 +13,9 @@ function Add() {
   return (
     
     <form>
+      
         <div class= "centeri">
-        <Button variant="contained" className="Pois">
-          Etusivulle
-        </Button>
+        
         <Typography variant="h4" gutterBottom classname = "tekstit">
           Missä kirjastolla olit töissä
         </Typography>
@@ -49,9 +49,10 @@ function Add() {
           variant="outlined" // outlinattu
           fullWidth //koko alueen vie 
         />
-        <Button variant="contained" className="Buttoni">
-          Lähetä
-        </Button>
+        <Stack className='rivi' spacing={1} direction='row'>
+        <Button variant="contained" > Lähetä</Button>
+        <Button variant="contained" >Etusivulle</Button>
+        </Stack>
         </div>
    </form>
     
