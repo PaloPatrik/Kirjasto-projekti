@@ -10,11 +10,8 @@ import './Add.css';
 
 function Add(props) {
   return (
-    
     <form>
-      
         <div class= "centeri">
-        
         <Typography variant="h6" gutterbottom className = "tekstit">
           Millä kirjastolla olit töissä
         </Typography>
@@ -24,11 +21,13 @@ function Add(props) {
           <FormControlLabel value="kirjasto2" control={<Radio />} label="Kirjasto2"/>
           <FormControlLabel value="kirjasto3" control={<Radio />} label="Kirjasto3"/>
         </RadioGroup>
+        
         <div className= "tekstit">
           <Typography variant="h6" gutterBottom>
             Missä oli vika
           </Typography>
         </div>
+        
         <RadioGroup row name="laite" className="RadioGroup"
         //radiogroup missä oli vika
         >
@@ -47,9 +46,10 @@ function Add(props) {
           variant="outlined" // outlinattu
           fullWidth //koko alueen vie 
         />
+        
         <Stack className='rivi' spacing={1} direction='row'>
-        <Button variant="contained">Lähetä</Button>
-        <Button variant="contained" onClick={() => props.setValue(2)}>Takaisin</Button>
+          <Button variant="contained">Lähetä</Button>
+          <Button variant="contained" onClick={() => props.setValue(2)}>Takaisin</Button>
         </Stack>
         </div>
    </form>

@@ -1,59 +1,50 @@
 .centeri {
-    /*margin-top: 60dvh;*/
-    position: absolute;
-    top: 57dvh;
-    left: 50dvw;
-    transform: translate(-50%, -50%);
-  }
+  position: absolute;
+  top: 57dvh;
+  left: 50dvw;
+  transform: translate(-50%, -50%);
+}
   
 .RadioGroup {
-    margin-bottom: 10dvh;
-    max-height: 60dvh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
+  margin-bottom: 10dvh;
+  max-height: 60dvh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
   
 .Buttoni {
-    left: 20dvw;
-  }
+  left: 20dvw;
+}
   
 .teksti{
-    margin-bottom: 50dvh;
-    margin-top: 5dvh;
-  }
+  margin-bottom: 50dvh;
+  margin-top: 5dvh;
+}
 
 .tekstit{
-    display: flex;
-    flex-direction: row;
-    white-space: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-    
-.Pois{
-  position: absolute;
-  left: -25dvw;
-  top: 5dvh;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  }
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 .rivi {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 0dvw;
-    right: 0dvw;
-    width:100%;
-    height: 100px;
-  };
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0dvw;
+  right: 0dvw;
+  width:100%;
+  height: 100px;
+};
