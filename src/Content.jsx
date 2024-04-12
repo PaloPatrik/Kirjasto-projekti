@@ -10,9 +10,9 @@ const Content = (props) => {
         <>
         <div className='Contents'>
             <Stack className='addSearch' spacing={1} direction='row'>
-                <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}}>Hae</Button>
-                <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}} onClick={() => props.setValue(3)}>Lisää</Button>
-                <Button variant='contained' style={{color: 'black', backgroundColor: 'gray'}} onClick={() => props.setValue(0)}>Ulos</Button>
+                <Button variant='contained'>Hae</Button>
+                <Button variant='contained' onClick={() => props.setValue(3)}>Lisää</Button>
+                <Button variant='contained' onClick={() => props.setValue(0)}>Ulos</Button>
             </Stack>
         </div>
 
