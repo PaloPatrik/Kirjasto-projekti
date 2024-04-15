@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import './Add.css';
 
+// Ohjelma ottaa parametreihin vastaan valuen ja setvaluen
 function Add(props) {
   return (
     <form>

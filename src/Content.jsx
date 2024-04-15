@@ -5,8 +5,9 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 
+// Ohjelma ottaa parametreihin vastaan valuen ja setvaluen
 const Content = (props) => {
-    return (
+    return ( // Div Content sivun ylänapeille ja tiedot, jotka näkyvät sivun keskellä
         <>
         <div className='Contents'>
             <Stack className='addSearch' spacing={1} direction='row'>
@@ -16,8 +17,8 @@ const Content = (props) => {
             </Stack>
         </div>
 
-        <div className='Information'>
-            <Stack className='TiedotTausta'>
+        <div className='Information'> 
+            <Stack className='TiedotTausta'> 
             <Stack className='personProb' direction='column' spacing={3}>
                 <Typography>Henkilö:</Typography>
                 <Typography>Päivämäärä:</Typography>

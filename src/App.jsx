@@ -53,8 +53,9 @@ function App() {
       </Stack>
     </div>
   )
-
+  // Jos value on 3, ohjelma piirtää Add näkymän
   else if (value === 3) {
+    // Yliajetaan oletustyyli
     var theme2 = createTheme({
       components: {
         MuiCssBaseline: {
@@ -78,9 +79,9 @@ function App() {
       </div>
     );
   } 
-
+  // Jos value on 2, ohjelma piirtää Content näkymän
   else if (value === 2)
-
+  // Yliajetaan oletustyyli
   var theme = createTheme({
     components : {
       MuiCssBaseline: {
