@@ -23,7 +23,7 @@
   background-color: white;
 }
 
-.pidor {
+.TiedotTausta {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

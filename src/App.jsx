@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField'; // Ohjelma käyttää Reactin l
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from "@mui/material/CssBaseline";
 import Add from './Add';
-import background from './sigma2.png';
+import background from './Kirjasto2.png';
 
 // Funktio kirjautumissivulle
 // Funktio toimii if lauseen voimin, ja katsoo oikean 'staten' ja piirtää sille määritellyn näkymän
@@ -29,7 +29,7 @@ function App() {
           <TextField variant='outlined' type='password' className='rekisteroidykentat' label='Salasana uudelleen' />
         </Stack>
 
-        <Stack className='vati'>
+        <Stack className='KirRekButton'>
           <Button variant='contained' type='submit'>Rekisteröidy</Button>
         </Stack>
       </div>
@@ -48,7 +48,7 @@ function App() {
         <TextField variant="outlined" type='password' className='kirjaudukentat' label='Salasana' required/>
       </Stack>
 
-      <Stack spacing={5} className='vati'>
+      <Stack spacing={5} className='KirRekButton'>
         <Button variant="contained" onClick={() => setValue(2)}>Kirjaudu</Button>
       </Stack>
     </div>

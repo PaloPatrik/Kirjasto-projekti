@@ -17,7 +17,7 @@ const Content = (props) => {
         </div>
 
         <div className='Information'>
-            <Stack className='pidor'>
+            <Stack className='TiedotTausta'>
             <Stack className='personProb' direction='column' spacing={3}>
                 <Typography>Henkilö:</Typography>
                 <Typography>Päivämäärä:</Typography>

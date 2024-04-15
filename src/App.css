@@ -6,7 +6,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: url('sigma.jpg');
+    background-image: url('Kirjasto.jpg');
     background-size: 55% 100vh;
     background-repeat: no-repeat;
     padding-left: 55%;
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.vati{
+.KirRekButton{
   margin-top: 40px;
   display: flex;
   flex-direction: row;
@@ -56,7 +56,7 @@
 }
 
 @media only screen and (max-width: 949px){
-  .kirjaudukentat, .logreg, .rekisteroidykentat, .vati {
+  .kirjaudukentat, .logreg, .rekisteroidykentat, .KirRekButton {
     display: flex;
     flex-direction: column, row;
     flex-wrap: nowrap;
