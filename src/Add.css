@@ -1,11 +1,11 @@
-.centeri {
-  position: absolute;
+.centeri { /*laittaa kaikki asiat centeriin*/
+  position: absolute; 
   top: 57dvh;
   left: 50dvw;
   transform: translate(-50%, -50%);
 }
   
-.RadioGroup {
+.RadioGroup { /*RadioGroupeja säätää*/
   margin-bottom: 10dvh;
   max-height: 60dvh;
   display: flex;
@@ -16,11 +16,11 @@
   justify-content: center;
 }
   
-.Buttoni {
+.Buttoni { /*nappit*/
   left: 20dvw;
 }
   
-.teksti{
+.teksti{ /* */
   margin-bottom: 50dvh;
   margin-top: 5dvh;
 }
