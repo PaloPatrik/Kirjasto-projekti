@@ -13,7 +13,7 @@ const Content = (props) => {
             <Stack className='addSearch' spacing={1} direction='row'>
                 <Button variant='contained'>Hae</Button>
                 <Button variant='contained' onClick={() => props.setValue(3)}>Lisää</Button>
-                <Button variant='contained' onClick={() => props.setValue(0)}>Ulos</Button>
+                <Button variant='contained' style={{backgroundColor: 'red'}} onClick={() => props.setValue(0)}>Ulos</Button>
             </Stack>
         </div>
 
