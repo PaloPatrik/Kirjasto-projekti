@@ -6,6 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
+import Checkbox from '@mui/material/Checkbox';
 import './Add.css';
 
 // Ohjelma ottaa parametreihin vastaan valuen ja setvaluen
@@ -32,11 +33,10 @@ function Add(props) {
         <RadioGroup row name="laite" className="RadioGroup"
         //radiogroup missä oli vika
         >
-          <FormControlLabel value="Tietokone" control={<Radio />} label="Tietokone"/>
-          <FormControlLabel value="Puhelin" control={<Radio />} label="Puhelin"/>
-          <FormControlLabel value="Pankkitili" control={<Radio />} label="Pankkitili"/>
-          <FormControlLabel value="Tabletti" control={<Radio />} label="Tabletti"/>
-          <FormControlLabel value="Muu" control={<Radio />} label="Muu"/>
+          <FormControlLabel value="Tietokone" control={<Checkbox/>} label="Tietokone"/>
+          <FormControlLabel value="Puhelin" control={<Checkbox />} label="Puhelin"/>
+          <FormControlLabel value="Tabletti" control={<Checkbox />} label="Tabletti"/>
+          <FormControlLabel value="Muu" control={<Checkbox />} label="Muu"/>
           </RadioGroup>
      
         <TextField 
